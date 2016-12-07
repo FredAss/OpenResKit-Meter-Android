@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_1"
+    android:orientation="horizontal" >
+
+<fragment
+    android:name="htw.bui.openreskit.meter.SeriesFragment"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:id="@+id/series_fragment"
+    android:layout_weight="30"
+    android:layout_marginRight="6dp">
+</fragment>
+<fragment
+    android:name="htw.bui.openreskit.meter.ReadingFragment"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:id="@+id/reading_fragment"
+     android:layout_weight="30">
+</fragment>
+<fragment
+    android:name="htw.bui.openreskit.meter.EnterValueFragment"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:id="@+id/enter_value_fragment"
+     android:layout_weight="40">
+</fragment>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector_dark">
+
+<ImageView
+    android:id="@+id/ImageView01"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:layout_marginTop="6dp"
+    android:background="@color/background_color_2"
+    android:baselineAlignBottom="false" >
+
+</ImageView>
+
+<TextView
+    android:id="@+id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="36dp"
+    android:layout_toRightOf="@+id/ImageView01"
+    android:ellipsize="marquee"
+    android:inputType="none"
+    android:maxLines="1"
+    android:paddingBottom="6dp"
+    android:scrollHorizontally="true"
+    android:text="@+id/TextView01"
+    android:textColor="@color/actionbar_background_dark"
+    android:textSize="20sp" >
+</TextView>
+
+<TextView
+    android:id="@+id/text2"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_alignLeft="@+id/text1"
+    android:layout_below="@+id/text1"
+    android:text="Datum" />
+
+</RelativeLayout>

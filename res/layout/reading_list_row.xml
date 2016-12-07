@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector_light">
+
+<ImageView
+    android:id="@+id/StatusIcon"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_centerHorizontal="false"
+    android:layout_margin="6dp"
+    android:background="@drawable/navigation_accept"
+    android:scaleType="centerInside" >
+
+</ImageView>
+
+<TextView
+    android:id="@+id/readingListText1"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_toRightOf="@+id/StatusIcon"
+    android:ellipsize="marquee"
+    android:inputType="none"
+    android:maxLines="1"
+    android:paddingBottom="6dp"
+    android:scrollHorizontally="true"
+    android:text="ContainerName"
+    android:textSize="20sp" >
+
+</TextView>
+<TextView 
+    android:id="@+id/readingListText2"
+    android:layout_width="180dp" 
+    android:layout_height="20dp"
+    android:layout_toRightOf="@+id/StatusIcon" 
+    android:layout_below="@+id/readingListText1"
+    android:ellipsize="marquee" 
+    android:maxLines="1"
+    android:text="ReadingDate">
+</TextView>
+
+<TextView
+    android:id="@+id/readingListValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="6dp"
+    android:layout_toRightOf="@+id/readingListText1"
+    android:gravity="right"
+    android:text="Value" >
+
+</TextView>
+</RelativeLayout>
+
